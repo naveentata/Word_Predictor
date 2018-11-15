@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Dependencies
 
 ```
 Tensorflow
@@ -22,7 +22,7 @@ A step by step series of examples that tell you how to get a development env run
 Run the Main network
 
 ```
-oython lstm_word.py
+python lstm_word.py
 ```
 
 Tuneable seeds and parameters
@@ -53,9 +53,9 @@ Git
 
 ## Authors
 
-* **Rahul Krishnan** - *Programmer - [Rahul Krishnan](https://github.com/rahulkrishnan98)
-* **Naveen Tata** - *Programmer - [Naveen](https://github.com/naveentata)
-* **Venkat Gopalakrishnan** - *Programmer - [Venkat](https://github.com/rahulkrishnan98)
+* **Rahul Krishnan** - *Programmer* - [Rahul Krishnan](https://github.com/rahulkrishnan98)
+* **Naveen Tata** - *Programmer* - [Naveen](https://github.com/naveentata)
+* **Venkat Gopalakrishnan** - *Programmer* - [Venkat](https://github.com/rahulkrishnan98)
 
 ## License
 
