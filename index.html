@@ -36,16 +36,16 @@
                 <div class="card-content">
                     <div class="card-title"><i class="material-icons">dashboard</i>&nbsp;Dashboard</div>
                     <hr>
-                    <div><form action='' method='post'>
+                    <div><form id="inpForm" >
               Input User Sequence:<br>
-              <input type="text" name="inp"/><br>
+              <input type="text" id="inp" name="inp"/><br>
                         <input type="submit" value="Submit"/>
             </form>
-                    <output name="o"></output>
+                    <div id="output"></div>
 
                     </div>
 
-                    <canvas id="tempChart" width="400" height="400"></canvas>
+
                 </div>
             </div>
             
@@ -68,8 +68,27 @@
             var instances = M.Dropdown.init(elems, {coverTrigger:false,hover:true});
         });
 
+        function submit(event){
+            event.preventDefault();
+            console.log('it worked');
+            var inpText = document.getElementById('inp').value;
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  document.getElementById("output").innerHTML = this.responseText;
+                }
+            };
+
+            xhttp.open("POST", "/", true);
+            xhttp.send(inpText);
+            return false;
+        }
+
+        document.getElementById('inpForm').onsubmit = submit;
+
     </script>
 
 </body>
 
 </html>
+
