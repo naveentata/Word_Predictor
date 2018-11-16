@@ -33,8 +33,8 @@ class MyServer(BaseHTTPRequestHandler):
                 self.send_header('Content-type', mimetype)
                 self.end_headers()
                 self.wfile.write(bytes(f.read(),'utf-8'))
-                #self.wfile.close()
                 f.close()
+                # self.wfile.close()
             return
 
         except IOError:
@@ -43,18 +43,18 @@ class MyServer(BaseHTTPRequestHandler):
         try:
             content_length = int(self.headers['Content-Length'])  # <--- Gets the size of data
             post_data = self.rfile.read(content_length)
-            post_1=list(str(post_data))
-            a=[]
-            flag=0
-            for i in range(1,len(post_1)-1):
-                if(post_1[i-1]=='=' or flag==1):
-                    a.append(post_1[i])
-                    flag=1
-            a=("".join(a))
-            result=lstm_word.predictor(a)
+            post_data = post_data.decode('utf-8')
+            a = post_data.split(' ')
+            a = ("+".join(a))
 
+            print(a)
+            result=lstm_word.predictor(a)
+            self.send_response(200)
+            self.send_header('Content-type', 'text')
+            self.end_headers()
+            self.wfile.write(bytes(result,'utf-8'))
             #send to Front-End
-            print(result)
+
         except:
             print ("Exception")
 
