@@ -1,0 +1,55 @@
+body{
+    background:#f2f2f2;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.login-card{
+    margin:0 auto;
+}
+
+.loader-icon{
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    z-index: 1000;
+    height: 60px;
+    width: 60px;
+}
+
+.top-nav{
+    z-index:100;
+}
+
+.side-nav{
+    top:64px;
+}
+
+
+
+i.material-icons {
+    vertical-align: bottom;
+}
+
+.clickable{
+    cursor:pointer;
+}
+
+.bottom{
+    top:20px;
+}
+
+li.active{
+    background:#2196f3 !important;
+}
+
+nav{
+    z-index:100;
+}
+
+.fixed{
+    position:fixed;
+}
