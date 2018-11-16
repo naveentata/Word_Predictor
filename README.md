@@ -70,8 +70,8 @@ Git
 ## Authors
 
 * **Rahul Krishnan** - *Programmer* - [Rahul Krishnan](https://github.com/rahulkrishnan98)
-* **Naveen Tata** - *Programmer* - [Naveen](https://github.com/naveentata)
-* **Venkat Gopalakrishnan** - *Programmer* - [Venkat](https://github.com/rahulkrishnan98)
+* **Naveen Veera Venkata** - *Programmer* - [Naveen](https://github.com/naveentata)
+* **Venkat Gopalakrishnan** - *Programmer* - [Venkat](https://github.com/gvenkat07)
 
 ## License
 
