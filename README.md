@@ -35,7 +35,7 @@ dense_1 (Dense)              (None, 142)               56942
 
 A step by step series of examples that tell you how to get a development env running
 
-Run the Main network
+Run the Main-network
 
 ```
 python lstm_word.py
