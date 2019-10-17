@@ -1,4 +1,4 @@
-# Word Predictor
+# Word-Predictor
 
 A simple LSTM network to predict next word in a given sequential list of words from a sentence.
 
