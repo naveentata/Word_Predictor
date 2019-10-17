@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 Dependencies
 
 ```
-Tensorflow
+Tensorflow 
 Keras (Backend Tensorflow)
 ```
 ### Model Summary
@@ -49,7 +49,7 @@ Update Data corpus to requisite data, ie Conversational dialogues are great star
 ```
 
 
-### And coding style 
+## And coding style 
 
 All code is UTF 8 encoded 
 (Built in a Pycharm Virtual Env)
